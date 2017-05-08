@@ -14,6 +14,17 @@ Essa função de navegação por categorias só ocorreria no privado do Bot. Ela
 
 Sempre seriam mostradas as opções "Voltar" e "Mostrar grupos/canais"
 
+### Botões inline de feedback
+
+Reproduziriam a função do bot @like, que coloca, embaixo das postagens, botões de avaliação/feedback compostos por emojis, mas com as diferenças:
+
+- Seria um bot para uso interno dos administradores do @grupos_ti
+- Teria suporte a markdown (negrito e itálico)
+- Permitiria editar postagens
+- Não seria inline
+- Todas as postagens de grupos/canais/eventos do @grupos_ti seriam feitas por ele, que automaticamente enviaria os dados dessa postagens para o banco de dados
+
+
 ### Busca inline de grupos/canais:
 
 - Seria um recurso [inline](https://core.telegram.org/bots/inline)
