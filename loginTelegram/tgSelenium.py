@@ -4,9 +4,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from time import sleep
 from tgFunctions import *
 
+#colocar o numero do telefone com DDD ex: 021 7777-7777
+phone = input('Phone number with DDD: ')
 browser = webdriver.Firefox()
 browser.get('https://web.telegram.org/#/login')
-login_telegram(browser, '21995181636')
+login_telegram(browser, phone)
 
 print('sleep time wait 20 seconds')
 sleep(20)

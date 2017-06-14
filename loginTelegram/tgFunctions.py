@@ -6,7 +6,7 @@ def login_telegram(browser,phone_num):
     '''function with steps to login in telegram web'''
     #find field phone_number and set num of cell phone
     phone = WebDriverWait(browser, 10).until(lambda browser: browser.find_element_by_name('phone_number'))
-    phone.send_keys(str(phone_num)) #phone.send_keys(input('Phone: '))
+    phone.send_keys(phone_num)
     phone.send_keys(Keys.ENTER)
     #find box and click ok to confirm cell phone
     box = WebDriverWait(browser, 10).until(lambda browser: browser.find_elements_by_tag_name('button'))
