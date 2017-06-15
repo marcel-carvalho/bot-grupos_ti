@@ -11,7 +11,7 @@ browser = webdriver.Firefox()
 browser.get('https://web.telegram.org/#/login')
 login_telegram(browser, phone)
 
-print('sleep time wait 10 seconds')
+print('sleep time: 10 seconds')
 sleep(10)
 print('sleep time over')
 
@@ -20,14 +20,11 @@ browser.get('https://www.google.com.br/')
 
 new_tab(browser)
 browser.get('https://web.telegram.org/#/im?tgaddr=tg%3A%2F%2Fjoin%3Finvite%3DAAAAAEDrakjDNoJR0vtulw')
-sleep(10)
-
+print('sleep time: 5 seconds')
+sleep(5)
 box_group = WebDriverWait(browser, 10).until(lambda browser: browser.find_elements_by_tag_name('button'))
-print(box_group)
-box_group[3].click()
+box_group[2].click()
 
-
-#box.click()
 
 #browser.get('https://web.telegram.org/#/im?tgaddr=tg%3A%2F%2Fjoin%3Finvite%3DAAAAAEDrakjDNoJR0vtulw')
 #browser.get('https://t.me/joinchat/AAAAAEDrakjDNoJR0vtulw')
