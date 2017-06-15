@@ -16,9 +16,6 @@ sleep(10)
 print('sleep time over')
 
 new_tab(browser)
-browser.get('https://www.google.com.br/')
-
-new_tab(browser)
 browser.get('https://web.telegram.org/#/im?tgaddr=tg%3A%2F%2Fjoin%3Finvite%3DAAAAAEDrakjDNoJR0vtulw')
 print('sleep time: 5 seconds')
 sleep(5)
