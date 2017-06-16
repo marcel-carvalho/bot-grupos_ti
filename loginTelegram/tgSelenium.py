@@ -21,9 +21,13 @@ box_group[2].click()
 
 # coletando dados do grupo
 browser.find_element_by_class_name('tg_head_btn').click()
+data_group = {
+    'name': None
+    'users': None
+}
 name_group = browser.find_element_by_class_name('peer_modal_profile').text
 num_users = browser.find_element_by_class_name('peer_modal_profile_description').text
-print('Nome do Grupo: {0}\n Numero de participantes: {1}' .format(name_group, num_users))
+print('Nome do Grupo: {}\n Numero de participantes: {}'.format(name_group, num_users))
 
 #saindo do grupo
 
