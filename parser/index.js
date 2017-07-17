@@ -8,8 +8,12 @@ const OUTPUT = path.join(__dirname, 'output/entries.json');
 function getEntries(html) {
   const $ = load(html);
   const entries = $('.im_message_text').map((i, el) => {
-    return $(el).text();
+    const tags = $(el).find('[href^="tg://search_hashtag"]').text();
+    const desc = $(el).clone().children().remove().end().text().trim().replace(/^-\s/, '');
+    const link = $(el).find('[href^="tg://join"]').text();
+    return {tags, desc, link};
   }).get()
+  console.log(entries);
   console.log(`${entries.length} grupos/canais encontrados`);
   return JSON.stringify(entries);
 }
