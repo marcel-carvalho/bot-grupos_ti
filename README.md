@@ -2,7 +2,7 @@
 Repositório para o bot do canal no telegram @grupos_ti
 
 Links:
-- [Telegram BOT Api](https://core.telegram.org/bots/api).
+- [Telegram BOT Api](https://core.telegram.org/bots/api)
 - [PyTelegramBot (telebot)](https://github.com/eternnoir/pyTelegramBotAPI)
 
 No Telegram:
