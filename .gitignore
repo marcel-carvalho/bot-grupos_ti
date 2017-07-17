@@ -1,5 +1,6 @@
 node_modules/
 .token
 *.log
+output/
 *.json
 __pycache__
