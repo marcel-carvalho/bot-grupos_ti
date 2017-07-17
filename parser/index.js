@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const {load} = require('cheerio');
 
-const RAW_DATA = path.join(__dirname, '../raw_data/tg.html');
+const RAW_DATA = path.join(__dirname, 'raw/tg.html');
 const OUTPUT = path.join(__dirname, 'output/entries.json');
 
 function getEntries(html) {
