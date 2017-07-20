@@ -45,11 +45,3 @@ Caso algum campo opcional fosse otimido, seria usada a opção padrão (buscar t
 
 - Para buscar canais de Linux em inglês e espanhol:
 > @grupos_tiBot #canal #en #pt linux
-
-
-### Envio de postagens pelo bot
-
-As postagens de grupos/canais seriam feitas pelo bot. O bot, depois de postar, automaticamente enviaria o grupo/canal para o banco de dados do tg-list.online
-
-- O bot teria a funcionalidade do @like, de colocar emojis para feedback abaixo da postagem
-- Será permitido editar a postagem depois de postar
