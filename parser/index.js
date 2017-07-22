@@ -9,7 +9,7 @@ function getEntries(html) {
   const $ = load(html);
   const entries = $('.im_message_text, .im_message_photo_caption').map((i, el) => {
     let tags = $(el).find('[href^="tg://search_hashtag"]').text();
-    let desc = $(el).clone().children(':not(br):not([href^="tg://search_hashtag"])').remove().end().find('br').replaceWith(' ').end().text().trim().replace(/^-\s/, '').replace(/\s\s+/g, '\n');
+    let desc = $(el).clone().children('[href^="tg://search_hashtag"]').remove().end().find('br').replaceWith(' ').end().text().trim().replace(/^-\s/, '').replace(/\s\s+/g, ' ');
     let link = $(el).find('[href^="tg://join"],[href^="tg://resolve"],[href^="https://www.telegram.me/"]').text();
     return {tags, desc, link};
   }).get()
