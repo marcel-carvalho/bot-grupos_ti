@@ -15,4 +15,4 @@ No Telegram:
 Temos um parser para gerar um json com os grupos já postados no canal [@grupos_ti](https://t.me/grupos_ti), para futuramente inserir no http://tg-list.online.
 
 - Clone o projeto e rode `yarn` ou `npm install`
-- Para gerar o json rode `make parse`
+- Para gerar o json rode `make`

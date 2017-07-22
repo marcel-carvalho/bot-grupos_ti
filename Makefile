@@ -1,2 +1,2 @@
-parse:
+all:
 	node parser/index.js
