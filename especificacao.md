@@ -14,15 +14,15 @@ Essa função de navegação por categorias só ocorreria no privado do Bot. Ela
 
 Sempre seriam mostradas as opções "Voltar" e "Mostrar grupos/canais"
 
-### Botões inline de feedback
+### Envio de postagens pelo bot
 
-Reproduziriam a função do bot @like, que coloca, embaixo das postagens, botões de avaliação/feedback compostos por emojis, mas com as diferenças:
+Enviar postagens ao @grupos_ti usando o bot. Simularia a função do @like, de colocar emojis para feedback.
 
 - Seria um bot para uso interno dos administradores do @grupos_ti
 - Teria suporte a markdown (negrito e itálico)
 - Permitiria editar postagens
 - Não seria inline
-- Todas as postagens de grupos/canais/eventos do @grupos_ti seriam feitas por ele, que automaticamente enviaria os dados dessa postagens para o banco de dados
+- Todas as postagens de grupos/canais do @grupos_ti seriam feitas por ele, que automaticamente enviaria os dados dessa postagens para o banco de dados, do site.
 
 
 ### Busca inline de grupos/canais:
@@ -45,11 +45,3 @@ Caso algum campo opcional fosse otimido, seria usada a opção padrão (buscar t
 
 - Para buscar canais de Linux em inglês e espanhol:
 > @grupos_tiBot #canal #en #pt linux
-
-
-### Envio de postagens pelo bot
-
-As postagens de grupos/canais seriam feitas pelo bot. O bot, depois de postar, automaticamente enviaria o grupo/canal para o banco de dados do tg-list.online
-
-- O bot teria a funcionalidade do @like, de colocar emojis para feedback abaixo da postagem
-- Será permitido editar a postagem depois de postar
