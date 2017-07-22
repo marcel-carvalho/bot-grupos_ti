@@ -13,9 +13,11 @@ function getEntries(html) {
     let link = $(el).find('[href^="tg://join"],[href^="tg://resolve"],[href^="https://www.telegram.me/"]').text();
     return {tags, desc, link};
   }).get()
-  console.log(entries);
-  console.log(`${entries.length} grupos/canais encontrados`);
-  return JSON.stringify(entries, null, '  ');
+  const filtered = entries.filter(item => {
+    return (item.tags.length && item.link.length && !item.tags.match(/Evento|Palestra/g))
+  })
+  console.log(`${filtered.length} grupos/canais encontrados`);
+  return JSON.stringify(filtered, null, '  ');
 }
 
 function parse(path) {
