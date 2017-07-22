@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const {load} = require('cheerio');
+const load = require('cheerio').load;
 
 const RAW_DATA = path.join(__dirname, 'raw/tg.html');
 const OUTPUT = path.join(__dirname, 'output/entries.json');
