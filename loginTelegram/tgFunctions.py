@@ -16,7 +16,9 @@ def login_telegram(browser,phone_num):
     code = WebDriverWait(browser, 10).until(lambda browser: browser.find_element_by_name('phone_code'))
     code.send_keys(input('Phone Code: '))
     #loading page
-    print('sleep time: 10 seconds'), sleep(10), print('sleep time over')
+    print('sleep time: 10 seconds')
+    sleep(10)
+    print('sleep time over')
 
 
 def new_tab(browser):

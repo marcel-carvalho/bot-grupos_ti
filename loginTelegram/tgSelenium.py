@@ -22,7 +22,7 @@ box_group[2].click()
 # coletando dados do grupo
 browser.find_element_by_class_name('tg_head_btn').click()
 data_group = {
-    'name': None
+    'name': None,
     'users': None
 }
 name_group = browser.find_element_by_class_name('peer_modal_profile').text
