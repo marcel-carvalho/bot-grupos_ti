@@ -6,7 +6,7 @@ from tgFunctions import *
 
 #colocar o numero do telefone com DDD ex: 021 7777-7777
 phone = input('Phone number with DDD: ')
-phone = '21995181636'
+
 #login no telegram web
 browser = webdriver.Firefox()
 browser.get('https://web.telegram.org/#/login')
